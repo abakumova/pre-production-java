@@ -15,7 +15,7 @@ public class TicketsContainerTest {
     public void getStandardTicketsTest() {
         TicketParser ticketParser = new TicketParser();
         TicketsContainer ticketsContainer;
-        ticketsContainer = ticketParser.parseXMLFile("example.xml");
+        ticketsContainer = ticketParser.parseXMLFile("src/main/resources/example.xml");
         List<Ticket> actualStandartTickets = ticketsContainer.getStandardTickets();
 
         List<Ticket> expectedStandartTickets = new ArrayList<>();
