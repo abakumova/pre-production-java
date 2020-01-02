@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tickets>
+    <ticket>
+        <category>STANDART</category>
+        <date>2010-12-01T16:45:00+02:00</date>
+        <id>12</id>
+        <place>40</place>
+        <title>Ten Thing I Hate About You</title>
+    </ticket>
+    <ticket>
+        <category>STANDART</category>
+        <date>2010-12-01T16:45:00+02:00</date>
+        <id>13</id>
+        <place>56</place>
+        <title>Ten Thing I Hate About You</title>
+    </ticket>
+    <ticket>
+        <category>STANDART</category>
+        <date>2009-03-15T17:20:00+02:00</date>
+        <id>14</id>
+        <place>25</place>
+        <title>Harry Potter and the Sorcerer's Stone</title>
+    </ticket>
+    <ticket>
+        <category>STANDART</category>
+        <date>2009-03-15T17:20:00+02:00</date>
+        <id>15</id>
+        <place>56</place>
+        <title>Harry Potter and the Sorcerer's Stone</title>
+    </ticket>
+    <ticket>
+        <category>STANDART</category>
+        <date>2009-03-15T12:20:00+02:00</date>
+        <id>16</id>
+        <place>56</place>
+        <title>Harry Potter and the Sorcerer's Stone</title>
+    </ticket>
+    <ticket>
+        <category>STANDART</category>
+        <date>2011-05-12T15:45:00+03:00</date>
+        <id>9</id>
+        <place>69</place>
+        <title>Pirates of the Carribbean</title>
+    </ticket>
+    <ticket>
+        <category>BAR</category>
+        <date>2012-06-05T12:00:00+03:00</date>
+        <id>17</id>
+        <place>45</place>
+        <title>Men in Black</title>
+    </ticket>
+    <ticket>
+        <category>BAR</category>
+        <date>2012-06-04T15:45:00+03:00</date>
+        <id>8</id>
+        <place>45</place>
+        <title>Men in Black</title>
+    </ticket>
+    <ticket>
+        <category>PREMIUM</category>
+        <date>2013-08-23T12:00:00+03:00</date>
+        <id>10</id>
+        <place>115</place>
+        <title>Forest Gump</title>
+    </ticket>
+</tickets>
