@@ -1,0 +1,86 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://preprod/qa/soap"
+           targetNamespace="http://preprod/qa/soap" elementFormDefault="qualified">
+
+    <xs:element name="addBookingRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="doctorName" type="xs:string"/>
+                <xs:element name="timeSlot" type="xs:integer"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="addBookingResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="booking" type="tns:booking"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="deleteBookingRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="doctorName" type="xs:string"/>
+                <xs:element name="timeSlot" type="xs:integer"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="deleteBookingResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="deleteBooking" type="xs:boolean"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="searchFreeTimeSlotRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="doctorName" type="xs:string"/>
+                <xs:element name="timeSlotFrom" type="xs:integer"/>
+				<xs:element name="timeSlotTo" type="xs:integer"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+	<xs:element name="searchFreeTimeSlotResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="timeSlot" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+    <xs:complexType name="doctor">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="specialization" type="tns:specialization"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="booking">
+        <xs:sequence>
+            <xs:element name="doctorName" type="xs:string"/>
+            <xs:element name="timeSlot" type="xs:integer"/>
+            <xs:element name="bookingStatus" type="tns:status"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="specialization">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Neurosurgeons"/>
+            <xs:enumeration value="Pediatrician"/>
+            <xs:enumeration value="Surgeon"/>
+            <xs:enumeration value="Dentist"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="status">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="active"/>
+            <xs:enumeration value="closed"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
